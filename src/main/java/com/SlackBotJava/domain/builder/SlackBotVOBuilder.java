@@ -10,8 +10,10 @@ public class SlackBotVOBuilder {
 
     public SlackBotVO build(BotVO botVO) {
         SlackBotVO slackBotVO = new SlackBotVO();
-
-
+        slackBotVO.setChannel( botVO.getTarget() );
+        slackBotVO.setText(botVO.getMessage() );
+        slackBotVO.setUsername( botVO.getName() );
+        slackBotVO.setToken("");
         return  slackBotVO;
     }
 }
