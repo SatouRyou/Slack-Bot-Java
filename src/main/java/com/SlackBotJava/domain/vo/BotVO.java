@@ -10,4 +10,5 @@ public class BotVO {
 
     private String name;
     private String message;
+    private String target;
 }
