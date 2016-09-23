@@ -33,7 +33,7 @@ public class BotController {
         BotVO botVO = new BotVO();
         botVO.setMessage("hellow slack java");
         botVO.setName("sample");
-        botVO.setTarget("#general");
+        botVO.setTarget("チャンネルID");
         return this.slackService.putSlack(botVO);
     }
 }
